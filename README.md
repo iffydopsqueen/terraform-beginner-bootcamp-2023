@@ -57,7 +57,7 @@ This bash script is located here: [./bin/install_terraform_cli](./bin/install_te
 - This will allow better portablity for other projects that need to install Terraform CLI.
 
 
-#### Shebang Considerations
+#### a. Shebang Considerations
 
 A Shebang (prounced sha-bang) tells the bash script what program that will interpret the script. eg. `#!/bin/bash`
 
@@ -66,10 +66,10 @@ ChatGPT recommended this format for bash: `#!/usr/bin/env bash`
 - for portability, 
 - for different OS distributions, will search the user's PATH for the bash executable
 
-https://en.wikipedia.org/wiki/Shebang_(Unix)
+[Why Use Shebang](https://en.wikipedia.org/wiki/Shebang_(Unix))
 
 
-#### Execution Considerations
+#### b. Execution Considerations
 
 When executing the bash script we can use the `./` shorthand notiation to execute the bash script.
 
@@ -80,7 +80,7 @@ If we are using a script in ``.gitpod.yml` we need to point the script to a prog
 eg. `source ./bin/install_terraform_cli`
 
 
-#### Linux Permissions Considerations
+#### c. Linux Permissions Considerations
 
 In order to make our bash scripts executable we need to change linux permission for the fix to be exetuable at the user mode.
 
@@ -94,11 +94,11 @@ alternatively:
 chmod 744 ./bin/install_terraform_cli
 ```
 
-https://en.wikipedia.org/wiki/Chmod
+[Linux Permission - chmod](https://en.wikipedia.org/wiki/Chmod)
 
 
-### Github Lifecycle (`before`, `init`, `command`)
+### Gitpod Lifecycles (`before`, `init`, `command`)
 
 We need to be careful when using the `init` because it will not rerun if we restart an existing workspace.
 
-https://www.gitpod.io/docs/configure/workspaces/tasks
+[Gitpod Workspace Lifecycles](https://www.gitpod.io/docs/configure/workspaces/tasks)
