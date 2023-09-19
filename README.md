@@ -221,6 +221,13 @@ We can output this changeset ie. "plan" to be passed to an apply, but often you 
 If we want to automatically approve an apply we can provide the auto approve flag eg. `terraform apply --auto-approve`
 
 
+#### d. Terraform Destroy
+
+`teraform destroy` - This will destroy resources.
+
+You can also use the `auto-approve` flag to skip the approve prompt eg. `terraform destroy --auto-approve`
+
+
 ### 3. Terraform Lock Files
 
 `.terraform.lock.hcl` contains the locked versioning for the providers or modulues that should be used with this project.
@@ -228,7 +235,7 @@ If we want to automatically approve an apply we can provide the auto approve fla
 The Terraform Lock File **should be committed** to your Version Control System (VSC) eg. Github
 
 
-### 4. Terraform State Files
+#### a. Terraform State Files
 
 `.terraform.tfstate` contain information about the current state of your infrastructure.
 
@@ -241,6 +248,6 @@ If you lose this file, you lose knowning the state of your infrastructure.
 `.terraform.tfstate.backup` is the previous state file state.
 
 
-### 5. Terraform Directory
+#### b. Terraform Directory
 
 `.terraform` directory contains binaries of terraform providers.
