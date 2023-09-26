@@ -61,3 +61,8 @@ Terraform loads variables in the following order, with later sources taking prec
 - Any `*.auto.tfvars` or `*.auto.tfvars.json` files, processed in lexical order of their filenames.
 
 - Any `-var` and `-var-file` options on the command line, in the order they are provided. (This includes variables set by a Terraform Cloud workspace.)
+
+
+# References 
+
+- [Terraform Variables](https://developer.hashicorp.com/terraform/language/values/variables)
