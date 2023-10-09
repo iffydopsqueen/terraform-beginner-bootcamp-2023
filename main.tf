@@ -1,11 +1,11 @@
 terraform {
   # Terraform Cloud
-  #cloud {
-  #  organization = "terraform-bootcamp-23"
-  #  workspaces {
-  #    name = "terra-house-1"
-  #  }
-  #}
+  cloud {
+    organization = "terraform-bootcamp-23"
+    workspaces {
+      name = "terraform-cloud"
+    }
+  }
   
   # Providers
   required_providers {
