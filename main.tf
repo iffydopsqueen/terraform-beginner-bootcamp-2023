@@ -37,15 +37,14 @@ module "terrahouse_aws" {
 }
 
 resource "terratowns_home" "home" {
-  name = "How to play Arcanum in 2023!"
+  name = "Fluffy Pancakes!"
   description = <<DESCRIPTION
-Arcanum is a game from 2001 that shipped with alot of bugs.
-Modders have removed all the originals making this game really fun
-to play (despite that old look graphics). This is my guide that will
-show you how to play arcanum without spoiling the plot.
+Fluffy pancakes are thick, airy, and soft breakfast cakes made from a batter typically 
+containing flour, eggs, milk, and leavening agents like baking powder. When cooked, 
+they have a light and airy texture, making them a favorite breakfast option.
 DESCRIPTION
   domain_name = module.terrahouse_aws.cloudfront_url
   town = "missingo"
-  content_version = 1
+  content_version = 2
 }
 
