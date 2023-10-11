@@ -62,6 +62,6 @@ with rice simmered in a vibrant blend of peppers, broth, seasoning, and spices a
 Pair this delightful dish with your preferred protein for a satisfying meal.
 DESCRIPTION
   domain_name = module.home_jollof_hosting.domain_name
-  town = "missingo"
+  town = "cooker-cove"
   content_version = var.jollof.content_version
 }
